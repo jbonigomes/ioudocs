@@ -326,11 +326,6 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('server', function () {
-    grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-    grunt.task.run(['serve']);
-  });
-
   // No real tests yet. Add your own.
   grunt.registerTask('test', [
   //   'clean:server',
@@ -362,14 +357,14 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin',
     'wkhtmltopdf:prod'
-    ]);
+  ]);
 
   grunt.registerTask('deploy', [
     'check',
     'test',
     'build',
     'buildcontrol'
-    ]);
+  ]);
 
   grunt.registerTask('default', [
     'check',

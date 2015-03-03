@@ -1,3 +1,16 @@
 @charset "utf-8";
 
+h1 {
+  color: red;
+}
 
+@media print {
+  * {
+    overflow: visible !important;
+  }
+
+  h1 {
+    color: red;
+  }
+
+}
