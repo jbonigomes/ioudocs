@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     docs
 categories: chapter
 ---
 

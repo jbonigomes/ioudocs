@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="docs">
+
+  <h1>IOU Docs</h1>
+
+  <ul class="menu">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    <li>
+      <a href="/pdf/jgomes01.pdf">Download PDF</a>
+    </li>
+  </ul>
+
+  {{ content }}
+
+</div>
