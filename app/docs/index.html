@@ -1,9 +1,20 @@
 ---
-layout: pdf
+layout: default
 ---
 
-{% for post in site.posts %}
+<div class="home">
 
-  {{ post.content }}
+  <h1 class="page-heading">IOU Docs</h1>
 
-{% endfor %}
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    <li>
+      <a href="/pdf/jgomes01.pdf">Download PDF</a>
+    </li>
+  </ul>
+
+</div>
