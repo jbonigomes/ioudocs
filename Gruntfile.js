@@ -207,9 +207,18 @@ module.exports = function (grunt) {
           src: [
             'img/**/*',
             'fonts/**/*',
-            '!**/_*{,/**}'
+            '!**/_*{,/**}',
           ],
           dest: '<%= yeoman.dist %>'
+        }]
+      },
+      printcss: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '.tmp/css',
+          src: 'print.css',
+          dest: '<%= yeoman.dist %>/css/'
         }]
       }
     },
@@ -323,6 +332,7 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin',
+    'copy:printcss',
     'wkhtmltopdf:prod'
   ]);
 
