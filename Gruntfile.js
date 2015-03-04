@@ -39,9 +39,9 @@ module.exports = function (grunt) {
         options: {
           server: {
             baseDir: [
-              ".jekyll",
-              ".tmp",
-              "<%= yeoman.app %>"
+              '.jekyll',
+              '.tmp',
+              '<%= yeoman.app %>'
             ]
           },
           watchTask: true
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
       dist: {
         options: {
           server: {
-            baseDir: "<%= yeoman.dist %>"
+            baseDir: '<%= yeoman.dist %>'
           }
         }
       },
@@ -67,9 +67,9 @@ module.exports = function (grunt) {
         options: {
           server: {
             baseDir: [
-              ".jekyll",
-              ".tmp",
-              "<%= yeoman.app %>"
+              '.jekyll',
+              '.tmp',
+              '<%= yeoman.app %>'
             ]
           },
           watchTask: true
@@ -268,11 +268,11 @@ module.exports = function (grunt) {
         ]
       }
     },
-    scsslint: {
-      allFiles: [
-        '<%= yeoman.app %>/_scss/**/*.scss'
-      ]
-    },
+    // scsslint: {
+    //   allFiles: [
+    //     '<%= yeoman.app %>/_scss/**/*.scss'
+    //   ]
+    // },
     concurrent: {
       server: [
         'compass:server',
@@ -316,7 +316,7 @@ module.exports = function (grunt) {
     'compass:server',
     'jshint:all',
     'csslint:check',
-    'scsslint'
+    // 'scsslint'
   ]);
 
   grunt.registerTask('build', [
