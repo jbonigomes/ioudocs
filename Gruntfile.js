@@ -345,7 +345,7 @@ module.exports = function (grunt) {
     'clean:server',
     'jekyll:check',
     'compass:server',
-    'jshint:all',
+    // 'jshint:all',
     'csslint:check',
     // 'scsslint'
   ]);
@@ -358,8 +358,8 @@ module.exports = function (grunt) {
     'concat',
     'cssmin',
     'uglify',
-    'imagemin',
-    'svgmin',
+    // 'imagemin',
+    // 'svgmin',
     'filerev',
     'usemin',
     'htmlmin',
