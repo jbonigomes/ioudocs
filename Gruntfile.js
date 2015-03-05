@@ -210,6 +210,18 @@ module.exports = function (grunt) {
             '!**/_*{,/**}',
           ],
           dest: '<%= yeoman.dist %>'
+        },{
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>/_bower_components/fontawesome/fonts',
+          src: ['**/*'],
+          dest: '<%= yeoman.dist %>/fonts'
+        },{
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>/_bower_components/open-sans/fonts',
+          src: ['**/*'],
+          dest: '<%= yeoman.dist %>/fonts'
         }]
       },
       printcss: {
@@ -285,12 +297,30 @@ module.exports = function (grunt) {
     },
     wkhtmltopdf: {
       dev: {
-        src: 'path/to/some/html/file/*.html',
-        dest: 'pdf/output/'
+        src: '.jekyll/pdf/*.html',
+        dest: '.jekyll/pdf/',
+        args: [
+          '--dpi', '96',
+          '--print-media-type',
+          '--footer-center', '[page]',
+          'cover', '<%= yeoman.app %>/_includes/cover.html',
+          'toc',
+          '--xsl-style-sheet',
+          '<%= yeoman.app %>/_includes/toc.xsl'
+        ]
       },
       prod: {
-        src: '<%= yeoman.dist %>/docs/**/*.html',
-        dest: '<%= yeoman.dist %>/pdf/'
+        src: '<%= yeoman.dist %>/pdf/*.html',
+        dest: '<%= yeoman.dist %>/pdf/',
+        args: [
+          '--dpi', '96',
+          '--print-media-type',
+          '--footer-center', '[page]',
+          'cover', '<%= yeoman.app %>/_includes/cover.html',
+          'toc',
+          '--xsl-style-sheet',
+          '<%= yeoman.app %>/_includes/toc.xsl'
+        ]
       }
     }
   });
@@ -304,6 +334,7 @@ module.exports = function (grunt) {
       'clean:server',
       'concurrent:server',
       'browserSync:server',
+      'wkhtmltopdf:dev',
       'watch'
     ]);
   });

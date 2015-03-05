@@ -1,0 +1,88 @@
+
+.welcome {
+
+  overflow: hidden;
+  text-align: center;
+  background: $clr_blue;
+
+  h1 {
+    font-size: 90px;
+    font-weight: 300;
+    color: $clr_white;
+  }
+
+  h2 {
+    color: lighten($clr_blue, 30%);
+  }
+
+  .nav {
+    @include nobullets();
+
+    li {
+
+      a {
+        padding: 10px;
+        display: block;
+        color: $clr_white;
+        text-decoration: none;
+        transition: all .5s ease-in-out;
+        border-right: 1px solid $clr_blue;
+        background: darken($clr_blue, 10%);
+      }
+
+      a:hover {
+        background: darken($clr_blue, 8%);
+      }
+    }
+  }
+
+  .store {
+    @include nobullets();
+
+    width: 300px;
+    margin: 0 auto;
+  }
+
+}
+
+.explanation {
+  @include nobullets();
+
+  margin: 100px 0;
+  text-align: center;
+  color: darken($clr_blue, 40%);
+
+  i {
+    display: block;
+    font-size: 100px;
+    margin-bottom: 10px;
+    color: darken($clr_blue, 30%);
+  }
+}
+
+.knees {
+  padding: 5px;
+  text-align: center;
+  color: lighten($clr_blue, 30%);
+  background: darken($clr_blue, 20%);
+}
+
+.toes {
+  @include nobullets();
+
+  text-align: center;
+
+  a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: lighten($clr_blue, 15%);
+    transition: all .5s ease-in-out;
+    background: darken($clr_blue, 40%);
+    border-right: 1px solid darken($clr_blue, 30%);
+  }
+
+  a:hover {
+    background: darken($clr_blue, 30%);
+  }
+}

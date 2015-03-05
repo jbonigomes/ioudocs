@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font: 400 14px/1.6em "Open Sans", sans-serif;
+}
+
+.half {
+  width: 50%;
+  float: left;
+}
+
+.third {
+  float: left;
+  width: 33.33333%;
+}
+
+.padded {
+  padding: 30px;
+}
+
+@mixin nobullets() {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
