@@ -4,21 +4,22 @@ layout: default
 
 <div class="docs">
 
-  <h1>IOU Docs</h1>
-
   <ul class="menu">
+    <li><a href="/" class="menu-title">IOU Docs</a></li>
     {% for post in site.posts %}
       <li>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </li>
     {% endfor %}
     <li>
-      <a href="/pdf/index.pdf">Download PDF</a>
+      <a href="/pdf/index.pdf">Download PDF <i class="fa fa-download"></i></a>
     </li>
   </ul>
 
   <div class="content">
-    {{ content }}
+    <div class="padded">
+      {{ content }}
+    </div>
   </div>
 
 </div>

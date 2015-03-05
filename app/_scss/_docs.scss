@@ -1,0 +1,38 @@
+
+.docs {
+  height: 100%;
+  border-top: 5px solid $clr_blue;
+
+
+  .menu {
+    float: left;
+    width: 250px;
+    height: 100%;
+    @include nobullets();
+    background: $clr_blue;
+
+    a {
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+      color: lighten($clr_blue, 30%);
+      transition: all .5s ease-in-out;
+      border-bottom: 1px dotted lighten($clr_blue, 20%);
+    }
+
+    a:hover {
+      background: darken($clr_blue, 5%);
+    }
+
+    .menu-title {
+      font-weight: bold;
+      color: lighten($clr_blue, 30%);
+      background: darken($clr_blue, 15%);
+    }
+  }
+
+  .content {
+    float: left;
+    width: calc(100% - 250px);
+  }
+}
