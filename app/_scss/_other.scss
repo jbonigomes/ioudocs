@@ -6,26 +6,30 @@
 
 .lost {
   min-height: 100%;
-  color: $clr_white;
   text-align: center;
   background: $clr_blue;
 
-  h1 {
-    margin: 0;
-    font-size: 180px;
-    font-weight: 300;
-    padding-top: 100px;
-  }
+  a {
+    text-decoration: none;
 
-  h2 {
-    font-size: 40px;
-    color: lighten($clr_blue, 20%);
-  }
+    h1 {
+      margin: 0;
+      font-size: 180px;
+      font-weight: 300;
+      color: $clr_white;
+      padding-top: 100px;
+    }
 
-  i {
-    font-size: 30px;
-    padding-bottom: 50px;
-    color: darken($clr_blue, 15%);
+    h2 {
+      font-size: 40px;
+      color: lighten($clr_blue, 20%);
+    }
+
+    i {
+      font-size: 30px;
+      padding-bottom: 50px;
+      color: darken($clr_blue, 15%);
+    }
   }
 }
 
