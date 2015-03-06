@@ -21,6 +21,12 @@ body {
   padding: 30px;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+
 @mixin nobullets() {
   margin: 0;
   padding: 0;
