@@ -2,6 +2,21 @@
   margin: 0 auto;
   max-width: 900px;
   margin-bottom: 50px;
+
+  a {
+    color: darken($clr_blue, 10%);
+    transition: all .5s ease-in-out;
+  }
+
+  a:hover {
+    color: $clr_blue;
+  }
+
+  a.go-home {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
 }
 
 .lost {

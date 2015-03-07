@@ -1,0 +1,22 @@
+---
+layout: cover
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cover page</title>
+</head>
+<body>
+
+  {{content}}
+
+  <script type="text/javascript" src="/_bower_components/moment/moment.js"></script>
+  <script type="text/javascript">
+    fulldate = moment().format('dddd, D MMM, YYYY');
+    fullyear = moment().format('YYYY');
+    document.getElementById('fulldate').innerHTML = fulldate;
+    document.getElementById('year').innerHTML = fullyear;
+  </script>
+</body>
+</html>
