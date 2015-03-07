@@ -303,7 +303,7 @@ module.exports = function (grunt) {
           '--dpi', '96',
           '--print-media-type',
           '--footer-center', '[page]',
-          'cover', 'http://localhost:3000/cover/',
+          'cover', 'http://jbonigomesbbk.github.io/cover/',
           'toc',
           '--xsl-style-sheet',
           '<%= yeoman.app %>/_includes/toc.xsl'
@@ -316,7 +316,7 @@ module.exports = function (grunt) {
           '--dpi', '96',
           '--print-media-type',
           '--footer-center', '[page]',
-          'cover', 'http://localhost:3000/cover/',
+          'cover', 'http://jbonigomesbbk.github.io/cover/',
           'toc',
           '--xsl-style-sheet',
           '<%= yeoman.app %>/_includes/toc.xsl'
