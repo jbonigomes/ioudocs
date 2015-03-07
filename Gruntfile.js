@@ -300,6 +300,7 @@ module.exports = function (grunt) {
         src: '.jekyll/pdf/*.html',
         dest: '.jekyll/pdf/',
         args: [
+          '-L', '20', '-T', '25', '-B', '25', '-R', '20',
           '--dpi', '96',
           '--print-media-type',
           '--footer-center', '[page]',
@@ -313,6 +314,7 @@ module.exports = function (grunt) {
         src: '<%= yeoman.dist %>/pdf/*.html',
         dest: '<%= yeoman.dist %>/pdf/',
         args: [
+          '-L', '20', '-T', '25', '-B', '25', '-R', '20',
           '--dpi', '96',
           '--print-media-type',
           '--footer-center', '[page]',
