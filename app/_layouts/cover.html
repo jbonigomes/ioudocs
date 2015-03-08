@@ -6,12 +6,22 @@ layout: cover
 <html>
 <head>
   <title>Cover page</title>
+
+  <style type="text/css">
+
+    body {
+      font-size: 14px;
+      line-height: 1.6;
+      font-family: Helvetica, arial, sans-serif;
+    }
+  </style>
+
 </head>
 <body>
 
   {{content}}
 
-  <script type="text/javascript" src="/_bower_components/moment/moment.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
   <script type="text/javascript">
     fulldate = moment().format('dddd, D MMM, YYYY');
     fullyear = moment().format('YYYY');

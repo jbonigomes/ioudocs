@@ -11,9 +11,49 @@
       <head>
         <title>Table of Contents</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style>
+          body {
+            font-size: 14px;
+            line-height: 1.6;
+            font-family: Helvetica, arial, sans-serif;
+          }
+
+          h1 {
+            font-size: 28px;
+            color: black;
+            margin: 20px 0 10px;
+            padding: 0;
+            font-weight: bold;
+            -webkit-font-smoothing: antialiased;
+            cursor: text;
+            position: relative;
+          }
+
+          span {
+            float: right;
+          }
+
+          li {
+            list-style: none;
+          }
+          
+          ul {
+            padding-left: 0em;
+          }
+          
+          ul ul {
+            padding-left: 1em;
+          }
+          
+          a {
+            text-decoration:none;
+            color: #000000;
+          }
+        </style>
+
       </head>
       <body>
-        <p>Table of Contents</p>
+        <h1>Table of Contents</h1>
         <ul><xsl:apply-templates select="outline:item/outline:item"/></ul>
       </body>
     </html>
@@ -24,10 +64,14 @@
         <div>
           <a>
             <xsl:if test="@link">
-              <xsl:attribute name="href"><xsl:value-of select="@link"/></xsl:attribute>
+              <xsl:attribute name="href">
+                <xsl:value-of select="@link"/>
+              </xsl:attribute>
             </xsl:if>
             <xsl:if test="@backLink">
-              <xsl:attribute name="name"><xsl:value-of select="@backLink"/></xsl:attribute>
+              <xsl:attribute name="name">
+                <xsl:value-of select="@backLink"/>
+              </xsl:attribute>
             </xsl:if>
             <xsl:value-of select="@title" />
           </a>
@@ -35,7 +79,9 @@
         </div>
       </xsl:if>
       <ul>
-        <xsl:comment>added to prevent self-closing tags in QtXmlPatterns</xsl:comment>
+        <xsl:comment>
+          added to prevent self-closing tags in QtXmlPatterns
+        </xsl:comment>
         <xsl:apply-templates select="outline:item"/>
       </ul>
     </li>
