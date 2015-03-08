@@ -19,14 +19,15 @@
           }
 
           h1 {
-            font-size: 28px;
-            color: black;
-            margin: 20px 0 10px;
             padding: 0;
-            font-weight: bold;
-            -webkit-font-smoothing: antialiased;
             cursor: text;
+            color: black;
+            font-size: 28px;
+            font-weight: bold;
             position: relative;
+            margin: 20px 0 10px;
+            page-break-before: always;
+            -webkit-font-smoothing: antialiased;
           }
 
           span {
