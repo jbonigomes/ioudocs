@@ -224,8 +224,8 @@ module.exports = function (grunt) {
         },{
           expand: true,
           dot: true,
-          cwd: '<%= yeoman.app %>/js/cover.js',
-          src: ['**/*'],
+          cwd: '<%= yeoman.app %>/js/',
+          src: ['cover.js'],
           dest: '<%= yeoman.dist %>/js/cover.js'
         }]
       },
