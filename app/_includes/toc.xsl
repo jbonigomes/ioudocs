@@ -18,7 +18,7 @@
             font-family: Helvetica, arial, sans-serif;
           }
 
-          h1 {
+          .h1 {
             padding: 0;
             cursor: text;
             color: black;
@@ -54,10 +54,10 @@
 
       </head>
       <body>
-        <h1>Abstract</h1>
+        <div class="h1">Abstract</div>
         <p>This is the abstract</p>
 
-        <h1>Table of Contents</h1>
+        <div class="h1">Table of Contents</h1>
         <ul><xsl:apply-templates select="outline:item/outline:item"/></ul>
       </body>
     </html>
