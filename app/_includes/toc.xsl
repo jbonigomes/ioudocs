@@ -53,6 +53,9 @@
 
       </head>
       <body>
+        <h1>Abstract</h1>
+        <p>This is the abstract</p>
+
         <h1>Table of Contents</h1>
         <ul><xsl:apply-templates select="outline:item/outline:item"/></ul>
       </body>
