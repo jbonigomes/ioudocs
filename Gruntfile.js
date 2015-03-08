@@ -1,4 +1,3 @@
-// Generated on 2015-02-21 using generator-jekyllrb 1.4.1
 'use strict';
 
 module.exports = function (grunt) {
@@ -232,6 +231,15 @@ module.exports = function (grunt) {
           src: 'print.css',
           dest: '<%= yeoman.dist %>/css/'
         }]
+      },
+      covercss: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '.tmp/css',
+          src: 'cover.css',
+          dest: '<%= yeoman.dist %>/css/'
+        }]
       }
     },
     filerev: {
@@ -366,6 +374,7 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin',
     'copy:printcss',
+    'copy:covercss',
     'wkhtmltopdf:prod'
   ]);
 
