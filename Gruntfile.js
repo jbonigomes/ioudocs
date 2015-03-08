@@ -221,6 +221,12 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>/_bower_components/open-sans/fonts',
           src: ['**/*'],
           dest: '<%= yeoman.dist %>/fonts'
+        },{
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>/js/cover.js',
+          src: ['**/*'],
+          dest: '<%= yeoman.dist %>/js/cover.js'
         }]
       },
       printcss: {
