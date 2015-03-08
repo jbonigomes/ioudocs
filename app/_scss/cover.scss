@@ -4,6 +4,25 @@ body {
   font-family: Helvetica, arial, sans-serif;
 }
 
+h1 {
+  padding: 0;
+  cursor: text;
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  margin: 20px 0 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cover {
+  h1 {
+    font-size: 80px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
 .abstract {
   page-break-before: always;
 }
