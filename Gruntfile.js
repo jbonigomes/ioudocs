@@ -240,6 +240,15 @@ module.exports = function (grunt) {
           src: 'cover.css',
           dest: '<%= yeoman.dist %>/css/'
         }]
+      },
+      favicon: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>',
+          src: 'favicon.ico',
+          dest: '<%= yeoman.dist %>/'
+        }]
       }
     },
     filerev: {
@@ -375,6 +384,7 @@ module.exports = function (grunt) {
     'htmlmin',
     'copy:printcss',
     'copy:covercss',
+    'copy:favicon',
     'wkhtmltopdf:prod'
   ]);
 
