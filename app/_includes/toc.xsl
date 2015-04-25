@@ -55,7 +55,19 @@
       </head>
       <body>
         <div class="h1">Abstract</div>
-        <p>This is the abstract</p>
+        <p>
+          When shopping with friends, it can be rather cumbersome to keep track
+          of all shared expenses. What about having a mean to swiftly store what
+          you spend with a view to settling it at a more convenient time? IOU
+          allows you to create log books, that can be shared with your Facebook
+          friends and keeps track of those things you buy together. From grocery
+          lists to household goods, party makers to house shares, IOU has you
+          covered, simply create a new log book, invite your friends and enter
+          what you spend as you spend. IOU will calculate what you owe and what
+          your friends owe you, with a clever change optimised algorithm. You
+          can even create items you intend to buy, so no need for shopping lists
+          anymore. And what is best, it is all updated in real time.
+        </p>
 
         <div class="h1">Table of Contents</div>
         <ul><xsl:apply-templates select="outline:item/outline:item"/></ul>
