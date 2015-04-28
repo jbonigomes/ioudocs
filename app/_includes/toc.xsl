@@ -30,10 +30,6 @@
             -webkit-font-smoothing: antialiased;
           }
 
-          span {
-            float: right;
-          }
-
           li {
             list-style: none;
           }
@@ -41,14 +37,37 @@
           ul {
             padding-left: 0em;
           }
-          
+
           ul ul {
             padding-left: 1em;
           }
           
           a {
-            text-decoration:none;
+            clear: both;
+            height: 17px;
+            display: block;
             color: #000000;
+            position: relative;
+            margin-bottom: 5px;
+            text-decoration: none;
+            border-bottom: 1px dotted #999;
+          }
+
+          a div {
+            top: 3px;
+            background: #FFF;
+            position: absolute;
+          }
+
+          a .right {
+            right: 0;
+            width: 20px;
+            text-align: right;
+          }
+
+          a .left {
+            left: 0;
+            padding-right: 5px;
           }
         </style>
 
@@ -77,22 +96,21 @@
   <xsl:template match="outline:item">
     <li>
       <xsl:if test="@title!=''">
-        <div>
-          <a>
-            <xsl:if test="@link">
-              <xsl:attribute name="href">
-                <xsl:value-of select="@link"/>
-              </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@backLink">
-              <xsl:attribute name="name">
-                <xsl:value-of select="@backLink"/>
-              </xsl:attribute>
-            </xsl:if>
-            <xsl:value-of select="@title" />
-          </a>
-          <span> <xsl:value-of select="@page" /> </span>
-        </div>
+        <a>
+          <xsl:if test="@link">
+            <xsl:attribute name="href">
+              <xsl:value-of select="@link"/>
+            </xsl:attribute>
+          </xsl:if>
+          <xsl:if test="@backLink">
+            <xsl:attribute name="name">
+              <xsl:value-of select="@backLink"/>
+            </xsl:attribute>
+          </xsl:if>
+
+          <div class="left"><xsl:value-of select="@title" /></div>
+          <div class="right"><xsl:value-of select="@page" /></div>
+        </a>
       </xsl:if>
       <ul>
         <xsl:comment>
