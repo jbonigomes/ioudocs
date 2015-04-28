@@ -23,16 +23,16 @@
     overflow: hidden;
     overflow-y: scroll;
     background-color: darken($clr_blue, 40%);
-
-    /*  Prevents Flickering  */
-    -webkit-backface-visibility: hidden;
-       -moz-backface-visibility: hidden;
-        -ms-backface-visibility: hidden;
   }
 
   .body-section {
     min-height: 100%;
     background-color: $clr_white;
+
+    /*  Prevents Flickering  */
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
   }
 
   header {
@@ -111,7 +111,7 @@
 
         a:hover {
           color: $clr_white;
-          background-color: $clr_blue;
+          background-color: darken($clr_blue, 20%);
         }
       }
     }
