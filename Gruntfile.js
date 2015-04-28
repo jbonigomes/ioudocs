@@ -321,7 +321,7 @@ module.exports = function (grunt) {
           '--dpi', '96',
           '--print-media-type',
           '--footer-center', '[page]',
-          'cover', 'http://jbonigomesbbk.github.io/cover/',
+          'cover', 'http://iou.rocks/cover/',
           'toc',
           '--xsl-style-sheet',
           '<%= yeoman.app %>/_includes/toc.xsl'
@@ -335,7 +335,7 @@ module.exports = function (grunt) {
           '--dpi', '96',
           '--print-media-type',
           '--footer-center', '[page]',
-          'cover', 'http://jbonigomesbbk.github.io/cover/',
+          'cover', 'http://iou.rocks/cover/',
           'toc',
           '--xsl-style-sheet',
           '<%= yeoman.app %>/_includes/toc.xsl'
@@ -385,7 +385,7 @@ module.exports = function (grunt) {
     'copy:printcss',
     'copy:covercss',
     'copy:favicon',
-    'wkhtmltopdf:prod'
+    // 'wkhtmltopdf:prod'
   ]);
 
   grunt.registerTask('deploy', [
