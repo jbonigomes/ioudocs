@@ -385,7 +385,7 @@ module.exports = function (grunt) {
     'copy:printcss',
     'copy:covercss',
     'copy:favicon',
-    // 'wkhtmltopdf:prod'
+    'wkhtmltopdf:prod'
   ]);
 
   grunt.registerTask('deploy', [
