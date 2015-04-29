@@ -13,7 +13,8 @@
   }
 
   .padded {
-    padding: 50px;
+    padding: 60px 20px;
+
   }
 
   .container {
@@ -28,11 +29,6 @@
   .body-section {
     min-height: 100%;
     background-color: $clr_white;
-
-    /*  Prevents Flickering  */
-    -webkit-backface-visibility: hidden;
-       -moz-backface-visibility: hidden;
-        -ms-backface-visibility: hidden;
   }
 
   header {
