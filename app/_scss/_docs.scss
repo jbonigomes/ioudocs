@@ -6,6 +6,12 @@
     text-decoration: none;
   }
 
+  p {
+    em {
+      display: block;
+    }
+  }
+
   .padded {
     padding: 60px 20px;
 
