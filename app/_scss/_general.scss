@@ -26,10 +26,6 @@ body {
   max-width: 1020px;
 }
 
-.breakpage {
-  page-break-before: always;
-}
-
 @mixin nobullets() {
   margin: 0;
   padding: 0;

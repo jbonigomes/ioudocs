@@ -1,6 +1,10 @@
 
 @media print {
 
+  .breakpage {
+    page-break-before: always;
+  }
+
   body {
     font-size: 14px;
     line-height: 1.6;
