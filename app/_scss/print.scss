@@ -5,14 +5,14 @@
     page-break-before: always;
   }
 
-  // p {
-  //   em {
-  //     display: block;
-  //   }
-  // }
+  p {
+    em {
+      display: block;
+    }
+  }
 
   body {
-    font-size: 14px;
+    font-size: 2em;
     line-height: 1.6;
     font-family: Helvetica, arial, sans-serif;
   }
