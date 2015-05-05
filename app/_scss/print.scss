@@ -1,6 +1,17 @@
 
 @media print {
 
+  .breakpage {
+    page-break-before: always;
+    font-size: 1.2em;
+  }
+
+  p {
+    em {
+      display: block;
+    }
+  }
+
   body {
     font-size: 14px;
     line-height: 1.6;
@@ -89,15 +100,6 @@
 
   p, blockquote, ul, ol, dl, li, table, pre {
     margin: 15px 0;
-  }
-
-  p {
-
-    font-size: 14px;
-
-    em {
-      display: block;
-    }
   }
 
   hr {
@@ -367,10 +369,6 @@
 
   pre {
     word-wrap: break-word;
-  }
-
-  .breakpage {
-    page-break-before: always;
   }
 
 }
