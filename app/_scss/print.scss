@@ -3,6 +3,10 @@
 
   .breakpage {
     page-break-before: always;
+
+    p {
+      font-size: 21px;
+    }
   }
 
   body {
