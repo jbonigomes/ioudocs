@@ -1,16 +1,15 @@
 
 @media print {
 
-  // .breakpage {
-    // page-break-before: always;
-    // font-size: 2em;
-  // }
-
-  p {
-    em {
-      display: block;
-    }
+  .breakpage {
+    page-break-before: always;
   }
+
+  // p {
+  //   em {
+  //     display: block;
+  //   }
+  // }
 
   body {
     font-size: 14px;
