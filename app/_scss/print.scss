@@ -2,7 +2,8 @@
 @media print {
 
   .breakpage {
-    font-size: 18px;
+    zoom: 1.5;
+    font-size: 14px;
     page-break-before: always;
   }
 
@@ -45,56 +46,32 @@
     position: relative;
   }
 
-  h1 tt, h1 code {
-    font-size: inherit;
-  }
-
-  h2 tt, h2 code {
-    font-size: inherit;
-  }
-
-  h3 tt, h3 code {
-    font-size: inherit;
-  }
-
-  h4 tt, h4 code {
-    font-size: inherit;
-  }
-
-  h5 tt, h5 code {
-    font-size: inherit;
-  }
-
-  h6 tt, h6 code {
-    font-size: inherit;
-  }
-
   h1 {
-    font-size: 32px;
+    font-size: 28px;
     color: black;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 24px;
     border-bottom: 1px solid #cccccc;
     color: black;
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   h5 {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   h6 {
     color: #777777;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   p, blockquote, ul, ol, dl, li, table, pre {
@@ -159,7 +136,7 @@
   }
   
   dl dt {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     font-style: italic;
     padding: 0;
@@ -332,7 +309,7 @@
   .highlight pre {
     background-color: #f8f8f8;
     border: 1px solid #cccccc;
-    font-size: 17px;
+    font-size: 13px;
     line-height: 19px;
     overflow: auto;
     padding: 6px 10px;
@@ -342,7 +319,7 @@
   pre {
     background-color: #f8f8f8;
     border: 1px solid #cccccc;
-    font-size: 17px;
+    font-size: 13px;
     line-height: 19px;
     overflow: auto;
     padding: 6px 10px;
